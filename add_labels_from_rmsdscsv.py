@@ -28,7 +28,7 @@ def add_label(item):
 	# print(rmsds_csv)
 	# print(rmsds_csv.loc[item['id']])
 
-	item['scores'] = float(rmsds_csv.loc[item['id']]) # pandas的dataframe默认选列！宣杭需要
+	item['scores'] = float(rmsds_csv.loc[item['id']]) # pandas的dataframe默认选列！用.loc选行
 	# print('label = ', item['label'])
 	return item
 
